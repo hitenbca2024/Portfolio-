@@ -126,7 +126,7 @@ ScrollReveal().reveal('.about-content', { origin: 'right' });
 //typed js
 
 const typed =  new Typed('.multiple-text',{
-    strings: ['PHP Developer','Frontend Developer'],
+    strings: ['PHP Developer','Backend Developer'],
     typeSpeed: 100,
     backSpeed:  100,
     backDelay: 1000,
