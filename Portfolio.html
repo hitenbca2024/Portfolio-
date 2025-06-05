@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- box icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!--custome css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!---Header section-->
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+
+    <!-- home section design -->
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3 class="hello">Hello, It's Me </h3>
+            <h1 class="name">Chauhan Hiten</h1>
+            <h3 class="role">And I'm <span class="multiple-text"></span></h3>
+            <pre class="intro">A passionate Web Developer having an experience of developing daynamic website and
+web applications in many programming languages HTML , CSS , JavaScript , PHP
+with databases.
+I utilize MYSQL and SQl database with some other use the libraries and frameworks.</pre>
+                        <a href="#contact" class="btn">Contact Me</a>
+            <a href="Hiten_CV-1.pdf" class="btn" download="Hiten_CV-1.pdf">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/hiten.png.jpg" alt="Hiten Chauhan">
+        </div>
+    </section>
+
+    <!-- about section design -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/hiten.png.jpg" alt="Hiten Chauhan">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="role">PHP Developer!</h3>
+            <pre class="about-intro">I passionate about web developer with expertise in building responsive websites,
+including many programming languages such as  HTML ,CSS ,  JavaScript,PHP.
+I utilize MySQL and SQL that both databases for backend development in website
+projects.
+        <div class="Tech-icons">
+            <img src="Icons/html icon.png" alt="HTML" class="tech-icon">
+            <img src="Icons/css icon.png" alt="CSS" class="tech-icon">
+            <img src="Icons/js icon.png" alt="JavaScript" class="tech-icon">
+            
+            <img src="Icons/php icon.png" alt="PHP" class="php">
+        </div>
+        <div class="Tech-icons">
+           
+        </div>
+    <span class="read-more-text">
+In the website and web applications development using a variety of frontend
+frameworks such PHP and Bootstrap.
+My skill set includes developing dynamic websites,PHP. 
+ </span>                
+     <span class="btn-read">Read More...</span> 
+    </pre>
+        </div>
+    </section>
+
+    <!-- skill section design -->
+
+    <section class="skills" id="skills">
+        <h2 class=" skill-heading">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <div class="skills-columns">
+                <h3 class="title">Frontend <span>Skills</span></h3>
+                <div class="skill-box">
+                    <div class="skills-content">
+
+                        <div class="progress">
+                            <h3>HTML<span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>CSS<span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>JavaScript<span>60%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-columns">
+                <h3 class="title">Backend <span>Skills</span></h3>
+                <div class="skill-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>PHP<span>85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- project section design -->
+
+    <section class="project" id="project">
+        <h2 class="project-heading">Latest<span> Projects</span></h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="images/login.png.bmp" alt="Project Image">
+                <div class="project-layer">
+                    <h4>E-commerce Admin Login Page</h4>
+                    <p>Developing e-commerce electronic store websites, specializing in user-friendly order tracking
+                        systems to facilitate effective order monitoring and admin-side inventory management system for
+                        efficient stock control and report generation.
+                    </p>
+                    <a href="#"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+     
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-img">
+                <img src="images/hiten.png.jpg" alt="">
+            </div>
+            <div class="contact-form">
+                <h2 class="contact-heading">Contact <span>Me!</span></h2>
+                <form name="google-sheet" method="post" class="form-border" name="form" id="form">
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" placeholder="Full Name" id="name" name="Name" class="item" autocomplete="on" required>
+                            <input type="email" placeholder="Email Address" id="email" name="Email" class="item" autocomplete="off" >
+                        </div>
+                    </div>
+                
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" placeholder="Mobile Number" id="phone" name="Phone" class="item" autocomplete="off" required pattern="[0-9]{10}">
+                            <input type="text" placeholder="Email Subject" id="Esubject" name="Emailsubject" class="item" autocomplete="off" required>
+                        </div>
+                    </div>
+                
+                    <div class="textarea-field field">
+                        <textarea name="Message" id="message" class="item" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    </div>
+                    <input type="submit" value="Send Message" class="btn" name="submit" onclick="return f1()">
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section design -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#skills" class="footer-link">Skills</a></li>
+                    <li><a href="#project" class="footer-link">Projects</a></li>
+                    <li><a href="#contact" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p class="contact-item"><i class="fa fa-phone"></i>(+91) 9328255232</p>
+                <p class="contact-item"><i class="fa fa-envelope"></i>hitenc239@gmail.com</p>
+                <p class="contact-item"><i class="fa fa-map-marker-alt"></i>&nbsp;Bhavnagar, Gujarat, India</p>
+            </div>
+            <div class="footer-column">
+                <div class="footer-social">
+                    <a href="https://wa.me/919328255232?text=Hello%20I'm%20interested%20in%20connecting%20with%20you!"
+                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/chauhan____hiten?igsh=cTBxNTkwbzJ5c2U5" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://in.linkedin.com/in/chauhan-hiten-8295872b7"
+                        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Hiten Chauhan | All Rights Reserved.</p>
+        </div>
+
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- custom JavaScript -->
+
+    <script src="js/Script.js"></script>
+</body>
+
+</html>
+<script>
+    function f1()
+    {
+        if(form.name.value=="")
+        {
+            alert("Enter Your Name");
+            form.name.focus();
+            return false;
+        }
+        else if(form.email.value=="")
+        {
+            alert("Enter Your Email Address");
+            form.email.focus();
+            return false;
+        }
+        else if(form.phone.value=="")
+        {
+            alert("Enter Your Phone Number");
+            form.phone.focus();
+            return false;
+        }
+        else if(form.Esubject.value=="")
+        {
+            alert("Enter Your Email Subject");
+            form.Esubject.focus();
+            return false;
+        }
+        else if(form.message.value=="")
+        {
+            alert("Enter Your Message");
+            form.message.focus();
+            return false;
+        }
+    }
+</script>
