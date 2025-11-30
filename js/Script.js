@@ -98,15 +98,37 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
 //Google sheet to store data 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwVgqv16SFL8bUYk0A7ZvlWvB7fKwlW65F0bUXHmbA9_8uZN8zvqxeiPqngE_2Yvzfm4A/exec'
-const form = document.forms['google-sheet']
+// Email will always be sent to your default email
+const DEFAULT_EMAIL = "hitenc239@gmail.com";
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("Message Sent Successfully..."))
-        .catch(error => console.error('Error!', error.message))
-});
+function doPost(e) {
+  try {
+    const data = e.parameter;
+
+    MailApp.sendEmail({
+      to: DEFAULT_EMAIL,
+      subject: "New Website Form Submission",
+      htmlBody: `
+        <h3>New Message Received</h3>
+        <p><b>Name:</b> ${data.name}</p>
+        <p><b>Email:</b> ${data.email}</p>
+        <p><b>Message:</b> ${data.message}</p>
+        <hr>
+        <p>📅 Time: ${new Date()}</p>
+      `
+    });
+
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: "success" }))
+      .setMimeType(ContentService.MimeType.JSON);
+      
+  } catch (err) {
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: "error", message: err }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+}
+
 
 
 //Scroll reveal
