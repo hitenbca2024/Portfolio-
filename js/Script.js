@@ -106,7 +106,7 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => alert("Message Sent Successfully..."))
         .catch(error => console.error('Error!', error.message))
-})
+});
 
 
 //Scroll reveal
